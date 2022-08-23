@@ -2,7 +2,7 @@ provider "azurerm" {
   features {}
 }
 resource "azurerm_container_registry" "acr" {
-  name                = "dev-ACR"
+  name                = "dev-acr"
   resource_group_name = "DEV-TF-RG"
   location            = "eastus"
   sku                 = "Premium"
