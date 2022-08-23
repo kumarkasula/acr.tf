@@ -7,14 +7,4 @@ resource "azurerm_container_registry" "acr" {
   location            = "eastus"
   sku                 = "Premium"
   admin_enabled       = false
-  georeplications {
-    location                = "centralus"
-    zone_redundancy_enabled = true
-    tags                    = {}
-  }
-  georeplications {
-    location                = "westeurope"
-    zone_redundancy_enabled = true
-    tags                    = {}
-  }
 }
