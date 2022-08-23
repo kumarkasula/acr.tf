@@ -1,4 +1,6 @@
-
+provider "azurerm" {
+  features {}
+}
 resource "azurerm_container_registry" "acr" {
   name                = "containerRegistry1"
   resource_group_name = "DEV-TF-RG"
