@@ -2,13 +2,13 @@ provider "azurerm" {
   features {}
 }
 resource "azurerm_container_registry" "acr" {
-  name                = "testtacr"
+  name                = "testinggacr"
   resource_group_name = "DEV-TF-RG"
   location            = "eastus"
   sku                 = "Premium"
   admin_enabled       = false
   georeplications {
-    location                = "westus"
+    location                = "centralus"
     zone_redundancy_enabled = true
     tags                    = {}
   }
